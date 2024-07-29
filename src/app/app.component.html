@@ -1,0 +1,17 @@
+<div [ngStyle]="navbg">
+  <div class="background-container">
+   
+    <div class="background-image" *ngIf="showImage">
+      
+      <div class="content-container">
+        <h1 class="larger-text">Unlimited Movies, TV </h1>
+          <h1 class="larger-text"> Shows, and More!</h1>
+<h5>Watch anywhere. Cancel anytime.</h5>
+        <div class="button-container">
+          <button class= "btn btn-light  fw-bold" (click)="open()">Get Started !</button>
+         
+      </div>
+    </div>
+  </div>
+  <router-outlet *ngIf="!showImage"></router-outlet>
+</div>
